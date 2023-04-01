@@ -1,0 +1,81 @@
+<style>
+#menu-screen-darkener {
+  width:100vw;
+  height:100vh;
+  visibility:hidden;
+  opacity:0;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,0.5);
+  z-index:101;
+  user-select: none;
+  transition:opacity 0.75s, visibility 0.5s;
+}
+
+#menu-screen-darkener.darken {
+  visibility:visible;
+  opacity:1;
+}
+</style>
+
+<nav id="navigation-bar">
+  <a href="/" id="logo-link" aria-label="Ares Homepage">
+    <img src="ares-logo-white.webp" id="home-logo-white" class="vertical-center" alt="">
+    <img src="ares-logo-web.webp" id="home-logo" class="vertical-center" alt="">
+  </a>
+  <ul id="nav-list" class="vertical-center">
+    <li>
+      <a href="/" id="nav-home">HOME</a>
+    </li>
+    <li>
+      <a href="/mission">MISSION</a>
+    </li>
+    <li>
+      <a href="/launch">LAUNCH</a>
+    </li>
+    <li>
+      <a href="/space">SPACE</a>
+    </li>
+    <li>
+      <a href="/surface">SURFACE</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="menu-screen-darkener"></div>
+
+<div id="menu-container">
+  <div id="hamburger-container" class="vertical-center menu-buttons">
+    <span id="hamburger-1" class="hamburger-line"></span>
+    <span id="hamburger-2" class="vertical-center hamburger-line"></span>
+    <span id="hamburger-3" class="hamburger-line"></span>
+  </div>
+  <ul >
+    <li id="navigation-menu" class="menu-buttons vertical-center">MENU</li>
+  </ul>
+</div>
+<div id="menu">
+  <div id="menu-underline-container">
+    <div class="menu-underline mu1"></div>
+    <div class="menu-underline mu2"></div>
+    <div class="menu-underline mu3"></div>
+    <div class="menu-underline mu4"></div>
+    <div class="menu-underline mu5"></div>
+    <div class="menu-underline mu6"></div>
+    <div class="menu-underline mu7"></div>
+    <div class="menu-underline mu8"></div>
+  </div>
+  <ul id="menu-list">
+    <a href="/" class="menu-link"><li class="menu-item mi1">HOME</li></a>
+    <a href="/mission" class="menu-link"><li class="menu-item mi2">MISSION</li></a>
+    <a href="/launch/hephaustus" class="menu-link"><li class="menu-item mi3">HEPHAESTUS</li></a>
+    <a href="/launch/prometheus" class="menu-link"><li class="menu-item mi4">PROMETHEUS</li></a>
+    <a href="/space/astraeus" class="menu-link"><li class="menu-item mi5">ASTRAEUS</li></a>
+    <a href="/surface/base" class="menu-link"><li class="menu-item mi6">SURFACE BASE</li></a>
+    <a href="/surface/mmsev" class="menu-link"><li class="menu-item mi7">MMSEV</li></a>
+    <a href="/surface/mars-vehicles" class="menu-link"><li class="menu-item mi8">MARS VEHICLES</li></a>
+  </ul>
+</div>
+
+<script src="/navigation.js"></script>
